@@ -1,20 +1,9 @@
 <h1 class='center'>Pokémons</h1>
 <div class='container'>
   <div class="row">
-    <div *ngFor='let pokemon of pokemons' class="col s6 m4">
-      <div class="card horizontal" appPkmnBorderCard >
-        <div class="card-image">
-          <img [src]="pokemon.picture">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>{{ pokemon.name }}</p>
-          </div>
-          <div class="card-action">
-              <a class="waves-effect waves-light btn">Voir plus</a>
-          </div>
-        </div>
-      </div>
+    <div >
+      <app-pokemon-list *ngFor='let pokemon of pokemons' class="col s6 m4"
+      [pokemon]= "pokemon" > </app-pokemon-list>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { Pokemon } from './../../shared/pokemon';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -7,8 +8,9 @@ import { Component, OnInit} from '@angular/core';
 })
 
 
-export class PokemonListComponent implements OnInit {
 
+export class PokemonListComponent implements OnInit {
+@Input() pokemon: Pokemon ;
   constructor() { }
 
   ngOnInit() {
