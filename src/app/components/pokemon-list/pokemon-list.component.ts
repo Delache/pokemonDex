@@ -10,8 +10,6 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 
 export class PokemonListComponent implements OnInit {
-click = true;
-button = 'Plus';
 @Input() pokemon: Pokemon ;
 @Output() details = new EventEmitter<Pokemon>();
 
@@ -21,8 +19,6 @@ button = 'Plus';
   }
   seeMore(pokemon: Pokemon) {
     this.details.emit(pokemon);
-    (this.click) ? this.button = 'Moins' : this.button = 'plus';
-    this.click = !this.click;
   }
 
 }

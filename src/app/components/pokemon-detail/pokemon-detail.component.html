@@ -1,19 +1,18 @@
-
-  <div class="col s12 m8 offset-m2">
-    <h2 class="header center">{{ pokemonDetails.name }}</h2>
-    <div class="card horizontal hoverable">
-      <div class="card-image">
-        <img [src]="pokemonDetails.picture">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <table class="bordered striped">
-              <tr>
-                <td>Description</td>
-                <td><strong>{{ pokemonDetails.details }}</strong></td>
-              </tr>
-          </table>
-        </div>
+<div class="col s12 m8 offset-m2">
+  <h3 class="header center">{{ pokemonDetails.name }}</h3>
+  <div class="card verticale hoverable">
+    <div class="card-image">
+      <img [src]="pokemonDetails.picture">
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <table class="bordered striped">
+            <tr>
+              <td>Description</td>
+              <td><strong>{{ pokemonDetails.details }}</strong></td>
+            </tr>
+        </table>
       </div>
     </div>
   </div>
+</div>
