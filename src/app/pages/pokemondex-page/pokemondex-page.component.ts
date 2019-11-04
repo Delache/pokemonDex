@@ -8,11 +8,17 @@ import { Pokemon } from './../../shared/pokemon';
 })
 export class PokemondexPageComponent implements OnInit {
   pokemons: Pokemon[] = null;
+  pokemonClicked: Pokemon;
+  view = false;
   constructor( private service: PokedexServiceService ) { }
 
   ngOnInit() {
     this.pokemons = this.service.getPokemons();
   }
+receivePokemon($event: Pokemon) {
+   this.pokemonClicked = $event;
 
+   console.log(this.pokemonClicked);
+  }
 }
 
