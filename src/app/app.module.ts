@@ -3,18 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PokemondexPageComponent } from './pages/pokemondex-page/pokemondex-page.component';
 import { CreatePokemonPageComponent } from './pages/create-pokemon-page/create-pokemon-page.component';
-import { PokemonsListComponent } from './components/pokemons-list/pokemons-list.component';
+import { PokemondexPageComponent } from './pages/pokemondex-page/pokemondex-page.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
+import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemondexPageComponent,
     CreatePokemonPageComponent,
-    PokemonsListComponent,
-    PokemonDetailComponent
+    PokemondexPageComponent,
+    PokemonDetailComponent,
+    PokemonListComponent,
   ],
   imports: [
     BrowserModule,

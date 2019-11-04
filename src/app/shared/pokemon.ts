@@ -3,4 +3,10 @@ export class Pokemon {
   name: string;
   picture: string;
   details: string;
+
+  constructor(input?: Pokemon) {
+    if (input != null) {
+    Object.assign(this, input);
+    }
+  }
 }
